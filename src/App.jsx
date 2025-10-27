@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Register from './component/Register';
 import Login from './component/Login';
 import Profile from './component/Profile';
-import AdminDashboard from './component/AdminDashboard';
+import AdminDashboard from './component/Admindashboard'
 import CommonDashboard from './component/CommonDashboard';
 import ProtectedRoute from './component/ProtectedRoute';
 import Logout from './component/Logout';
