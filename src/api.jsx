@@ -6,5 +6,5 @@ const api = axios.create({
   baseURL: apiUrl,
   withCredentials: true, // ← comma fixed and formatted properly
 });
-
+console.log('API URL:', apiUrl); // Add this to verify
 export default api;
