@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import api from '../api';
 import { useNavigate } from 'react-router-dom';
-
+import axios from 'axios';
 function Login() {
   const [formdata, setFormdata] = useState({ email: '', username: '', password: '' });
   const [error, setError] = useState('');
@@ -15,7 +15,7 @@ function Login() {
     e.preventDefault();
     setError('');
     try {
-      const res = await api.post('/login', formdata);
+      const res = await axios.post('https://e68-test-backend.vercel.app/api/login', formdata);
       const user = res?.data?.user;
 
       if (!user) {
